@@ -813,9 +813,7 @@ class PrintBigQuery(webapp2.RequestHandler):
 
         elif op == "update":
             update_data_level(self, bigquery, 'update', bigquery_setup)
-        #elif op == "custom_update":
-            #if not custom_fields_empty(bigquery):
-                #update_data_level(self, bigquery, 'custom_update', bigquery_custom_schemas_setup)
+
 
         elif op == "__dir__":
             options = [
